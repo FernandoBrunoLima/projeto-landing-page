@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container-body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.8em;
+  background-color: rgb(246, 246, 246);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-bar-green {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-upper-bar {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  width: 90vw;
+  padding-top: 1%;
+  padding-left: 5%;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.contact-upper-bar h3 {
+  font-size: 0.8rem;
+}
+
+.login-button {
+  display: flex;
+  background-color: #4caf50;
+  padding: 1vh;
+  width: 18vw;
+  justify-content: center;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  background-color: #3e8e41;
+}
+
+.login-button > p {
+  color: white;
+}
+
+#logo-bar {
+  background-color: #c9eed1;
+  display: flex;
+  align-items: center;
+  height: 30vh;
+}
+
+#logo-img {
+  width: 22vw;
+  object-fit: contain;
+}
+
+#fourfood-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  color: #4a692b;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: "EB Garamond", serif;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.2rem;
+  background-color: #c9eed1;
+  color: #4a692b;
+  font-size: 0.9rem;
+}
+
+nav.main-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav.main-nav li {
+  margin: 0 0.5rem;
+}
+
+nav.main-nav li:hover {
+  color: #0d100a;
+  cursor: pointer;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us {
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us-text {
+  padding: 0.7rem;
+  text-align: justify;
+}
+#about-us h2 {
+  padding-bottom: 0.8rem;
+  text-align: center;
+}
+
+#about-us img {
+  height: 65vh;
+  opacity: 85%;
+  object-fit: cover;
+}
+
+.banner {
+  background-color: #0a5b3e;
+  text-align: center;
+  padding: 40px;
+}
+
+.banner p {
+  color: white;
+  font-size: 1rem;
+}
+
+.banner button {
+  background-color: #4caf50;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner button:hover {
+  background-color: #3e8e41;
+}
+
+/* card sections */
+
+.container-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-plans h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem;
+  text-align: center;
+}
+
+.container-plans p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.card {
+  flex-basis: calc(25% - 1rem);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 0 2rem;
+}
+
+.card ul {
+  list-style-type: disc;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.card ul li {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.values {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(122, 59, 14);
+}
+
+.subscribe-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #3e8e41;
+}
+
+#more-information .plans-description {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding: 0px 50px 20px 50px;
+  text-align: justify;
+}
+
+/* formulario */
+
+#container-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1rem;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  max-width: 600px;
+}
+
+form input,
+form textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #3e8e41;
+  color: #000;
+}
+
+/* Estilos para a seção de contato */
+#contact-us {
+  text-align: center;
+}
+
+#contact-us h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#contact-icons img {
+  height: 20px;
+  width: 20px;
+}
+#contact-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#contact-icons a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  background-color: #000;
+  color: #fff;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+
+footer section {
+  flex-basis: 50%;
+}
+
+footer h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 0.78rem;
+  margin: 0;
+}
+
+footer p:last-of-type {
+  margin-top: 10px;
+}
+
+#my-contact-icons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#my-contact-icons img {
+  height: 20px;
+  width: 20px;
+}
+
+#my-contact-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#my-contact-icons a:hover {
+  background-color: #fff;
+  color: white;
+}
