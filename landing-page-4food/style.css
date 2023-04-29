@@ -40,6 +40,10 @@ header {
   font-size: 0.8rem;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .login-button {
   display: flex;
   background-color: #4caf50;

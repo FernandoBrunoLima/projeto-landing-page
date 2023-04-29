@@ -19,7 +19,7 @@
           <h3>(85) 1234-1234</h3>
         </div>
         <div class="login-button">
-          <p><strong>Assine já!</strong></p>
+          <p><a href="#container-form"><strong>Assine já!</a></strong></p>
         </div>
       </div>
       <div id="logo-bar">
@@ -64,7 +64,7 @@
             alimentos
             e sabores na rotina da sua família de maneira prática e fácil, além de garantir uma alimentação saudável e
             sustentável.</p>
-          <button>Quero uma vida mais saudável!</button>
+          <button class="banner-button">Quero uma vida mais saudável!</button>
         </article>
       </section>
       <section id="our-plans">
@@ -76,7 +76,7 @@
           <p>Além destas opções, você também pode personalizar sua caixa.<br>Entre em contato conosco para que posssamos
             fazer um orçamento.</p>
           <ul class="container-cards">
-            <li class="card ative">
+            <li class="card ative" id="plan-a">
               <img src="./img/cesta-de-piquenique.png" alt="icone de cesta">
               <h3>Plano A</h3>
               <p>4 caixas por mês, 1 por semana e frete incluso</p>
@@ -89,7 +89,7 @@
               <p class="values">R$ 250,00</p>
               <button class='subscribe-button'>Quero Assinar</button>
             </li>
-            <li class="card">
+            <li class="card" id="plan-b">
               <img src="./img/cesta-de-piquenique.png" alt="icone de cesta">
               <h3>Plano B</h3>
               <p>4 caixas por mês, 1 por semana e frete incluso</p>
@@ -103,7 +103,7 @@
               <button class='subscribe-button'>Quero Assinar</button>
 
             </li>
-            <li class="card">
+            <li class="card" id="plan-c">
               <img src="./img/cesta-de-piquenique.png" alt="icone de cesta">
               <h3>Plano C</h3>
               <p>4 caixas por mês, 1 por semana e frete incluso</p>
@@ -117,7 +117,7 @@
               <p class="values">R$ 380,00</p>
               <button class='subscribe-button'>Quero Assinar</button>
             </li>
-            <li class="card">
+            <li class="card" id="plan-d">
               <img src="./img/cesta-de-piquenique.png" alt="icone de cesta">
               <h3>Plano D</h3>
               <p>4 caixas por mês, 1 por semana e frete incluso</p>
@@ -154,7 +154,7 @@
         <article class="banner">
           <p>Nosso objetivo é simplificar sua vida e incentivar hábitos alimentares mais saudáveis e sustentáveis. Conte
             conosco para encher sua casa de orgânicos e melhorar sua qualidade de vida! </p>
-          <button>Quero uma vida mais saudável!</button>
+          <button class="banner-button">Quero uma vida mais saudável!</button>
         </article>
       </section>
 
@@ -165,7 +165,7 @@
           <input type="text" name="name" id="name" placeholder="Seu Nome"></input>
           <input type="text" name="fone" id="fone" placeholder="Telefone"></input>
           <input type="email" name="email" id="email" placeholder="E-mail"></input>
-          <textarea name="notes" id="notes" placeholder="Observações"></textarea>
+          <textarea name="notes" id="notes" placeholder="Observações (opcional)"></textarea>
           <button>Enviar</button>
         </form>
       </section>
