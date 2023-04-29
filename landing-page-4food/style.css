@@ -9,7 +9,7 @@
 #container-body {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 80vw;
   margin: 0 auto;
   font-size: 1.8em;
   background-color: rgb(246, 246, 246);
@@ -29,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #000;
-  width: 90vw;
+  width: 80vw;
   padding-top: 1%;
   padding-left: 5%;
   color: white;
@@ -43,8 +43,8 @@ header {
 .login-button {
   display: flex;
   background-color: #4caf50;
-  padding: 1vh;
-  width: 18vw;
+  padding: 2vh;
+  width: 20vw;
   justify-content: center;
   font-size: 1rem;
   transition: background-color 0.3s;
@@ -109,6 +109,9 @@ nav.main-nav ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 nav.main-nav li {
   margin: 0 0.5rem;
 }
@@ -125,7 +128,7 @@ nav.main-nav li:hover {
 
 #about-us {
   display: flex;
-  font-size: 0.7rem;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -170,8 +173,6 @@ nav.main-nav li:hover {
   background-color: #3e8e41;
 }
 
-/* card sections */
-
 .container-plans {
   display: flex;
   flex-direction: column;
@@ -201,7 +202,7 @@ nav.main-nav li:hover {
 .card {
   flex-basis: calc(25% - 1rem);
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -210,11 +211,10 @@ nav.main-nav li:hover {
 .card img {
   width: 50px;
   height: 50px;
-  margin-bottom: 1rem;
 }
 
 .card h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -231,7 +231,7 @@ nav.main-nav li:hover {
 }
 
 .card ul li {
-  margin: 1rem;
+  margin: 0.8rem;
   font-size: 1rem;
 }
 
@@ -257,15 +257,13 @@ nav.main-nav li:hover {
   background-color: #3e8e41;
 }
 
-#more-information .plans-description {
+#more-information #plans-description {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   padding: 0px 50px 20px 50px;
   text-align: justify;
 }
-
-/* formulario */
 
 #container-form {
   display: flex;
@@ -322,7 +320,6 @@ button:hover {
   color: #000;
 }
 
-/* Estilos para a seção de contato */
 #contact-us {
   text-align: center;
 }
@@ -343,6 +340,7 @@ button:hover {
   height: 20px;
   width: 20px;
 }
+
 #contact-icons a {
   display: inline-block;
   margin: 0 10px;
@@ -356,8 +354,6 @@ button:hover {
   background-color: #000;
   color: #fff;
 }
-
-/* footer */
 
 footer {
   display: flex;
@@ -411,4 +407,212 @@ footer p:last-of-type {
 #my-contact-icons a:hover {
   background-color: #fff;
   color: white;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #container-body {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .upper-bar-green {
+    display: flex;
+  }
+
+  .contact-upper-bar {
+    flex-basis: 50%;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .login-button {
+    flex-basis: 50%;
+    margin: 0 auto;
+  }
+
+  #logo-img {
+    display: none;
+  }
+
+  #fourfood-name {
+    display: none;
+  }
+
+  #logo-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url(/img/4food-green.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  nav.main-nav li {
+    margin: 5px 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #about-us {
+    padding: 8px;
+  }
+
+  #about-us img {
+    display: none;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .subscribe-button {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #more-information #plans-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 12px;
+    text-align: justify;
+  }
+
+  #more-information #plans-description > p {
+    padding: 8px;
+  }
+
+  form {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
+  }
+
+  #contact-icons a,
+  #my-contact-icons a {
+    padding: 8px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #my-section {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  * {
+    font-size: 1.3rem;
+  }
+
+  #container-body {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .upper-bar-green {
+    display: flex;
+  }
+
+  .contact-upper-bar {
+    flex-basis: 50%;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .login-button {
+    flex-basis: 50%;
+    margin: 0 auto;
+  }
+
+  #logo-img {
+    display: none;
+  }
+
+  #fourfood-name {
+    display: none;
+  }
+
+  #logo-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url(/img/4food-green.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  nav.main-nav li {
+    margin: 5px 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #about-us {
+    padding: 8px;
+  }
+
+  #about-us img {
+    display: none;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .subscribe-button {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #more-information #plans-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 12px;
+    text-align: justify;
+  }
+
+  #more-information #plans-description > p {
+    padding: 8px;
+  }
+
+  form {
+    width: 100%;
+    max-width: none;
+    padding: 10px;
+  }
+
+  #contact-icons a,
+  #my-contact-icons a {
+    padding: 8px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #my-section {
+    margin-top: 30px;
+  }
 }
